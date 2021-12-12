@@ -16,5 +16,5 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://vitor-stats-preview.netlify.app/)
+- Solution URL: [Link](https://your-solution-url.com)
+- Live Site URL: [Link](https://vitor-stats-preview.netlify.app/)
