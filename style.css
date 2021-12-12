@@ -1,0 +1,128 @@
+body {
+  margin: 0px;
+  background-color: hsl(233, 47%, 7%);
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+  margin: 100px auto 30px auto;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 10px;
+}
+
+.main-texto {
+  padding: 80px 50px;
+}
+
+.main-texto h1,
+h2 {
+  color: hsl(0, 0%, 100%);
+}
+
+.main-texto h1 {
+  margin-bottom: 20px;
+}
+
+.main-texto h1 span {
+  color: hsl(277, 64%, 61%);
+}
+
+.main-texto-p {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.main-texto-numeros {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 90px;
+}
+
+.main-texto-numeros li p {
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.main-img {
+  position: relative;
+}
+
+.main-img img {
+  max-width: 100%;
+  object-fit: cover;
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+}
+
+.tt {
+  background-color: purple;
+  z-index: 9;
+  position: absolute;
+  opacity: 55%;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+}
+.img-mobile {
+  display: none;
+}
+
+/* Footer */
+.attribution {
+  color: white;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  main {
+    margin: 0;
+  }
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+  .main-img {
+    grid-row-start: 1;
+  }
+  .img-desk {
+    display: none;
+  }
+  .img-mobile {
+    display: block;
+    max-width: 100%;
+  }
+  .main-texto {
+    text-align: center;
+  }
+  .main-texto-numeros {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  footer {
+    color: white;
+    position: absolute;
+    left: 50px;
+  }
+}
